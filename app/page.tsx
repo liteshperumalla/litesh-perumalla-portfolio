@@ -11,7 +11,7 @@ const experiences = [
 ]
 
 const projects = [
-  { number: '01', title: 'Smart Tutor AI', type: 'AI product · 2025—26', description: 'A personalized teaching system that turns course material into context-aware academic support, quizzes, and feedback.', tags: ['AWS Bedrock', 'RAG', 'LangChain', 'React'], accent: 'from-cyan-400/20 via-sky-500/5 to-transparent', href: '' },
+  { number: '01', title: 'Smart Tutor AI', type: 'AI product · 2025—26', description: 'A personalized teaching system that turns course material into context-aware academic support, quizzes, and feedback.', tags: ['AWS Bedrock', 'RAG', 'LangChain', 'React'], accent: 'from-cyan-400/20 via-sky-500/5 to-transparent', href: 'https://github.com/liteshperumalla/Smart-Tutor-AI-AI-Driven-Personalized-Teaching-Support' },
   { number: '02', title: 'Powering AI Infrastructure at Scale', type: 'GitHub project · 2026', description: 'Production-minded infrastructure patterns for building, deploying, and scaling reliable AI systems.', tags: ['AI infrastructure', 'MLOps', 'Cloud', 'Automation'], accent: 'from-violet-400/20 via-fuchsia-500/5 to-transparent', href: 'https://github.com/liteshperumalla/Powering-AI-Infrastructure-at-Scale' },
 ]
 
