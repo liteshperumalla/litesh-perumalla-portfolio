@@ -6,14 +6,12 @@ import { ArrowUpRight, Check, GitBranch, Link, Mail, Moon, Send, Sparkles, Sun, 
 import { Button } from '@/components/ui/button'
 
 const experiences = [
-  { role: 'AI Engineer Intern', company: 'Oldcastle Building Envelope', date: 'Jun 2026 — Present', location: 'Onsite', points: ['Led discovery and development of 5+ AI automation solutions across Operations, Finance, and Sales.', 'Designed LLM workflows across Azure, Snowflake, Power BI, and Fabric for intelligent document processing.', 'Consolidated internal knowledge into structured datasets that improved agent accuracy and relevance.'] },
+  { role: 'AI Automation Engineer Intern', company: 'Oldcastle Building Envelope', date: 'Jun 2026 — Present', location: 'Onsite', points: ['Architected 5+ end-to-end AI automation solutions across Operations, Finance, and Sales.', 'Orchestrated LLM workflows across Azure OpenAI, Snowflake, Power BI, and Fabric for intelligent document processing and task routing.', 'Consolidated 15,000 internal documents into structured datasets that improved AI agent accuracy and relevance.'] },
   { role: 'AI/ML Engineer Intern', company: 'Prognostic Optimization Group', date: 'Feb 2026 — Present', location: 'Remote', points: ['Developed an LLM-powered healthcare chatbot to improve symptom-triage conversations.', 'Built history-aware guardrails that prevented redundant questions across clinical domains.', 'Shipped structured-output validation and Docker-based production fixes for more consistent triage.'] },
 ]
 
 const projects = [
   { number: '01', title: 'Smart Tutor AI', type: 'AI product · 2025—26', description: 'A personalized teaching system that turns course material into context-aware academic support, quizzes, and feedback.', tags: ['AWS Bedrock', 'RAG', 'LangChain', 'React'], accent: 'from-cyan-400/20 via-sky-500/5 to-transparent' },
-  { number: '02', title: 'Clinical Triage Copilot', type: 'Healthcare AI · 2026', description: 'A safer patient conversation layer with medical-history awareness, structured outputs, and resilient retry safeguards.', tags: ['Python', 'LLMs', 'Docker', 'FastAPI'], accent: 'from-violet-400/20 via-fuchsia-500/5 to-transparent' },
-  { number: '03', title: 'Enterprise AI Automation', type: 'Operations · 2026', description: 'Production-minded proofs of concept connecting enterprise data, agents, and teams to remove high-value manual work.', tags: ['Azure', 'Snowflake', 'Power BI', 'Agents'], accent: 'from-emerald-400/20 via-teal-500/5 to-transparent' },
 ]
 
 const skillGroups = [
@@ -51,9 +49,9 @@ export default function Page() {
       <main id="main-content">
         <section id="top" className="hero section-shell">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="eyebrow-dot" /> AI engineer · building what&apos;s next</div>
-            <h1>Turning complex AI<br /><em>into useful products.</em></h1>
-            <p className="hero-lede">I&apos;m Litesh, an AI Engineer focused on production-grade LLM systems, RAG pipelines, and intelligent automation that makes work feel simpler.</p>
+            <div className="eyebrow"><span className="eyebrow-dot" /> AI automation engineer · building what&apos;s next</div>
+            <h1>Turning complex AI<br /><em>into automated impact.</em></h1>
+            <p className="hero-lede">I&apos;m Litesh, an AI Automation Engineer focused on production-grade LLM systems, RAG pipelines, and multi-agent workflows that eliminate manual work and make teams more effective.</p>
             <div className="hero-actions"><a className="primary-button" href="#work">View selected work <ArrowUpRight aria-hidden="true" /></a><a className="text-button" href="#contact">Start a conversation <span>↗</span></a></div>
             <div className="socials"><span>Find me online</span><a href="https://github.com" aria-label="GitHub"><GitBranch aria-hidden="true" /></a><a href="https://linkedin.com" aria-label="LinkedIn"><Link aria-hidden="true" /></a><a href="https://x.com" aria-label="X / Twitter"><CircleUser aria-hidden="true" /></a></div>
           </div>
@@ -64,7 +62,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="work" className="section-shell section-block"><div className="section-heading"><div><span className="section-index">01</span><h2>Selected work</h2></div><p>Systems that move ideas<br />from interesting to impactful.</p></div>
+        <section id="work" className="section-shell section-block"><div className="section-heading"><div><span className="section-index">01</span><h2>Projects</h2></div><p>AI automation systems that move ideas<br />from interesting to impactful.</p></div>
           <div className="projects-grid">{projects.map((project, index) => <motion.article key={project.title} className={`project-card ${index === 0 ? 'project-featured' : ''}`} initial={{ opacity: 0, y: reduceMotion ? 0 : 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.5, delay: index * 0.08 }} whileHover={reduceMotion ? {} : { y: -8 }}><div className={`project-art bg-gradient-to-br ${project.accent}`}><span className="project-number">{project.number}</span><Sparkles className="project-spark" aria-hidden="true" /><div className="art-lines" /></div><div className="project-body"><div className="project-meta"><span>{project.type}</span><span className="project-arrow">↗</span></div><h3>{project.title}</h3><p>{project.description}</p><div className="tag-row">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div></motion.article>)}</div>
         </section>
 
