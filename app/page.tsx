@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
-import { ArrowUpRight, Check, GitBranch, Link, Mail, Moon, Send, Sparkles, Sun, CircleUser } from 'lucide-react'
+import { ArrowUpRight, Check, GitBranch, Link, Mail, Moon, Send, Sparkles, Sun } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const experiences = [
@@ -16,6 +16,7 @@ const projects = [
 
 const skillGroups = [
   ['AI & Machine Learning', ['Python', 'PyTorch', 'TensorFlow', 'NLP', 'RAG', 'Multi-agent systems', 'Prompt engineering', 'Model optimization']],
+  ['AI Automation', ['Workflow orchestration', 'LLM agents', 'n8n', 'Power Automate', 'Document processing', 'Task routing', 'API integrations', 'Human-in-the-loop']],
   ['Cloud & MLOps', ['AWS', 'Bedrock', 'SageMaker', 'Docker', 'Kubernetes', 'Terraform', 'MLflow', 'CI/CD']],
   ['Data & Applications', ['FastAPI', 'React', 'PostgreSQL', 'MongoDB', 'OpenSearch', 'LangChain', 'Prometheus', 'Langfuse']],
 ]
@@ -53,7 +54,7 @@ export default function Page() {
             <h1>Turning complex AI<br /><em>into automated impact.</em></h1>
             <p className="hero-lede">I&apos;m Litesh, an AI Automation Engineer focused on production-grade LLM systems, RAG pipelines, and multi-agent workflows that eliminate manual work and make teams more effective.</p>
             <div className="hero-actions"><a className="primary-button" href="#work">View selected work <ArrowUpRight aria-hidden="true" /></a><a className="text-button" href="#contact">Start a conversation <span>↗</span></a></div>
-            <div className="socials"><span>Find me online</span><a href="https://github.com" aria-label="GitHub"><GitBranch aria-hidden="true" /></a><a href="https://linkedin.com" aria-label="LinkedIn"><Link aria-hidden="true" /></a><a href="https://x.com" aria-label="X / Twitter"><CircleUser aria-hidden="true" /></a></div>
+            <div className="socials"><span>Find me online</span><a href="https://github.com/liteshperumalla" target="_blank" rel="noreferrer" aria-label="GitHub"><GitBranch aria-hidden="true" /></a><a href="https://linkedin.com/in/perumalla-litesh" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Link aria-hidden="true" /></a><a href="mailto:liteshperumalla@gmail.com" aria-label="Email Litesh"><Mail aria-hidden="true" /></a></div>
           </div>
           <div className="hero-visual" aria-label="Portrait placeholder">
             <div className="visual-grid" /><div className="visual-orb orb-one" /><div className="visual-orb orb-two" />
