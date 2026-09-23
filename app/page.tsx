@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 
 const experiences = [
   { role: 'AI Automation Engineer Intern', company: 'Oldcastle Building Envelope', date: 'Jun 2026 — Present', location: 'Onsite', points: ['Architected 5+ end-to-end AI automation solutions across Operations, Finance, and Sales.', 'Orchestrated LLM workflows across Azure OpenAI, Snowflake, Power BI, and Fabric for intelligent document processing and task routing.', 'Consolidated 15,000 internal documents into structured datasets that improved AI agent accuracy and relevance.'] },
-  { role: 'AI/ML Engineer Intern', company: 'Prognostic Optimization Group', date: 'Feb 2026 — Present', location: 'Remote', points: ['Developed an LLM-powered healthcare chatbot to improve symptom-triage conversations.', 'Built history-aware guardrails that prevented redundant questions across clinical domains.', 'Shipped structured-output validation and Docker-based production fixes for more consistent triage.'] },
+  { role: 'AI/ML Engineer Intern', company: 'Prognostic Optimization Group', date: 'May 2026 — Present', location: 'Remote', points: ['Developed an LLM-powered healthcare chatbot to improve symptom-triage conversations.', 'Built history-aware guardrails that prevented redundant questions across clinical domains.', 'Shipped structured-output validation and Docker-based production fixes for more consistent triage.'] },
 ]
 
 const projects = [
